@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtual Environment
+.venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# VS Code
+.vscode/
+
+# Power BI temporary files
+*.pbix.autorecover
+
+# Environment variables
+.env
+
+# macOS
+.DS_Store
