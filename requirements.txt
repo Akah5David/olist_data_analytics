@@ -27,15 +27,18 @@ h11 @ file:///home/task_176193127072780/conda-bld/h11_1761931281921/work
 httpcore @ file:///croot/httpcore_1748526048470/work
 httpx @ file:///home/task_176044736830261/conda-bld/httpx_1760447380560/work
 idna @ file:///home/task_178056148341095/croot/idna_1780561509468/work
-ipykernel @ file:///home/task_177261241344276/croot/ipykernel_1772612453537/work
+ipykernel @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_ipykernel_1781101665/work
 ipython @ file:///home/task_178034866987678/croot/ipython_1780348812054/work
 ipython_pygments_lexers @ file:///croot/ipython_pygments_lexers_1744753235686/work
+ipywidgets @ file:///home/conda/feedstock_root/build_artifacts/ipywidgets_1762040433881/work
 jedi @ file:///home/task_177868175632619/croot/jedi_1778681783836/work
 Jinja2 @ file:///croot/jinja2_1741710844255/work
 joblib @ file:///home/task_176786732698665/croot/joblib_1767868073384/work
 json5 @ file:///home/task_176371846916870/conda-bld/json5_1763718481225/work
 jsonschema @ file:///home/task_176795535029166/croot/jsonschema_1767955382808/work
 jsonschema-specifications @ file:///home/task_176278841581006/conda-bld/jsonschema-specifications_1762788429133/work
+jupyter @ file:///home/conda/feedstock_root/build_artifacts/jupyter_1733818543322/work
+jupyter-console @ file:///home/conda/feedstock_root/build_artifacts/jupyter_console_1733817997778/work
 jupyter-events @ file:///home/task_177806712105989/croot/jupyter_events_1778067253171/work
 jupyter-lsp @ file:///home/task_176977257847350/croot/jupyter-lsp_1769772601218/work
 jupyter_client @ file:///home/task_178118076691501/croot/jupyter_client_1781183266722/work
@@ -45,6 +48,7 @@ jupyter_server_terminals @ file:///home/task_177028940298417/croot/jupyter_serve
 jupyterlab @ file:///home/task_178272730988704/croot/jupyterlab_1782727354288/work
 jupyterlab_pygments @ file:///croot/jupyterlab_pygments_1741124142640/work
 jupyterlab_server @ file:///home/task_176962910315117/croot/jupyterlab_server_1769629825862/work
+jupyterlab_widgets @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_jupyterlab_widgets_1762267481/work/python/jupyterlab_widgets
 kiwisolver @ file:///home/task_176415927184728/conda-bld/kiwisolver_1764159298260/work
 MarkupSafe @ file:///home/task_178239085291475/croot/markupsafe_1782390885265/work
 matplotlib==3.11.0
@@ -58,6 +62,7 @@ nbclient @ file:///home/task_178248457352843/croot/nbclient_1782484620485/work
 nbconvert @ file:///home/task_178239110433178/croot/nbconvert-meta_1782391147397/work
 nbformat @ file:///croot/nbformat_1728049424075/work
 nest-asyncio @ file:///croot/nest-asyncio_1708532673751/work
+nest-asyncio2 @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_nest-asyncio2_1770973502/work
 notebook @ file:///home/task_178034856377716/croot/notebook_1780348770138/work
 notebook_shim @ file:///home/task_176962907680860/croot/notebook-shim_1769629829707/work
 numpy @ file:///home/task_178236958369193/croot/numpy_and_numpy_base_1782369612085/work/dist/numpy-2.5.0-cp312-cp312-linux_x86_64.whl#sha256=e837cf4ddaf682566266655aa46eeccd352d1afee5943a3297844bc1fd4c7d6a
@@ -73,6 +78,7 @@ plotly @ file:///home/task_177921820851926/croot/plotly_1779218987249/work
 prometheus_client @ file:///home/task_177273324862204/croot/prometheus_client_1772733389807/work
 prompt_toolkit @ file:///home/task_176174483920045/conda-bld/prompt-toolkit_1761744853185/work
 psutil @ file:///home/task_176189642211680/conda-bld/psutil_1761896463664/work
+psycopg2 @ file:///home/conda/feedstock_root/build_artifacts/psycopg2-split_1756315579753/work
 ptyprocess @ file:///opt/miniconda3/conda-bld/ptyprocess_1762424170819/work/dist/ptyprocess-0.7.0-py2.py3-none-any.whl#sha256=3470be7f810474c8a2ecfcd6e02acc6aea8483ab595417fa4e336362a349933e
 pure_eval @ file:///home/task_175706684826776/conda-bld/pure_eval_1757067049051/work
 pyarrow==18.1.0
@@ -83,6 +89,7 @@ PyQt6==6.11.0
 PyQt6_sip @ file:///home/task_177582771832533/croot/pyqt-split_1775828366014/work/pyqt_sip
 PySocks @ file:///home/task_176175225699803/conda-bld/pysocks_1761753009944/work
 python-dateutil @ file:///croot/python-dateutil_1716495738603/work
+python-dotenv @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_python-dotenv_1772388605/work
 python-json-logger @ file:///home/task_176459015196371/conda-bld/python-json-logger_1764590198584/work
 PyYAML @ file:///home/task_176346544403961/conda-bld/pyyaml_1763465494824/work
 pyzmq @ file:///home/task_176237559504765/conda-bld/pyzmq_1762375608075/work
@@ -99,7 +106,7 @@ setuptools==82.0.1
 sip @ file:///home/task_177080696340261/croot/sip_1770807533821/work
 six @ file:///croot/six_1744271502820/work
 soupsieve @ file:///work/perseverance-python-buildout/croot/soupsieve_1698866207280/work
-SQLAlchemy @ file:///home/task_177375496101851/croot/sqlalchemy_1773754997582/work
+SQLAlchemy @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_sqlalchemy_1781547880/work
 stack_data @ file:///home/task_175706679004827/conda-bld/stack_data_1757067036633/work
 terminado @ file:///home/task_176959118510788/croot/terminado_1769591688757/work
 threadpoolctl @ file:///home/task_176436168230481/conda-bld/threadpoolctl_1764361729106/work
@@ -112,4 +119,5 @@ wcwidth @ file:///home/task_176777912523564/croot/wcwidth_1767779146734/work
 webencodings @ file:///work/perseverance-python-buildout/croot/webencodings_1698866454420/work
 websocket-client @ file:///croot/websocket-client_1715878298792/work
 wheel==0.47.0
+widgetsnbextension @ file:///home/conda/feedstock_root/build_artifacts/widgetsnbextension_1762040310212/work
 xlrd @ file:///home/task_175990984508907/conda-bld/xlrd_1759910281352/work
