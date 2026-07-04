@@ -38,16 +38,151 @@ product_category_name_translation = pd.read_csv("data/raw/product_category_name_
 products = pd.read_csv("data/raw/products.csv") 
 sellers = pd.read_csv("data/raw/sellers.csv")
 
+
+def check_primary_key(df, columns):
+    """
+    Check whether one or more columns uniquely identify each row.
+    """
+    duplicates = df.duplicated(subset=columns).sum()
+
+    if duplicates == 0:
+        print(f"✅ {columns} can serve as a primary key.")
+    else:
+        print(f"❌ {columns} contain {duplicates} duplicate(s).")
+
 print(orders.head())
 print("\n Order Shape: ", orders.shape)
-print("\n Order Shape: ", order_payments.shape)
-print("\n Order Shape: ", order_items.shape)
-print("\n Order Shape: ", order_reviews.shape)
-print("\n Order Shape: ", customers.shape)
-print("\n Order Shape: ", geolocation.shape)
-print("\n Order Shape: ", product_category_name_translation.shape)
-print("\n Order Shape: ", products.shape)
-print("\n Order Shape: ", sellers.shape)
 orders.info()
+
+# Missing values
+missing = pd.DataFrame({
+    "Missing": orders.isnull().sum(),
+    "Percentage": (orders.isnull().sum()/len(orders)*100).round(2)
+})
+
+# Duplicate checks
+check_primary_key(orders, ["order_id"])
+
+
+print(order_payments.head())
+print("\n order_payments Shape: ", order_payments.shape)
+order_payments.info()
+
+# Missing values
+missing = pd.DataFrame({
+    "Missing": order_payments.isnull().sum(),
+    "Percentage": (order_payments.isnull().sum()/len(order_payments)*100).round(2)
+})
+
+# Duplicate checks
+check_primary_key(order_payments, ["order_id"])
+
+
+print(order_items.head())
+print("\n order_items Shape: ", order_items.shape)
+order_items.info()
+
+# Missing values
+missing = pd.DataFrame({
+    "Missing": order_payments.isnull().sum(),
+    "Percentage": (order_payments.isnull().sum()/len(order_payments)*100).round(2)
+})
+
+# Duplicate checks
+check_primary_key(order_items, ["order_id"])
+
+
+print(order_reviews.head())
+print("\n order_reviews Shape: ", order_reviews.shape)
+order_reviews.info()
+
+# Missing values
+missing = pd.DataFrame({
+    "Missing": order_reviews.isnull().sum(),
+    "Percentage": (order_reviews.isnull().sum()/len(order_reviews)*100).round(2)
+})
+
+# Duplicate checks
+check_primary_key(order_reviews, ["review_id"])
+
+
+print(customers.head())
+print("\n customers Shape: ", customers.shape)
+customers.info()
+
+# Missing values
+missing = pd.DataFrame({
+    "Missing": customers.isnull().sum(),
+    "Percentage": (customers.isnull().sum()/len(customers)*100).round(2)
+})
+
+# Duplicate checks
+check_primary_key(customers, ["customer_id"])
+
+
+
+print(geolocation.head())
+print("\n geolocation Shape: ", geolocation.shape)
+geolocation.info()
+
+# Missing values
+missing = pd.DataFrame({
+    "Missing": geolocation.isnull().sum(),
+    "Percentage": (geolocation.isnull().sum()/len(geolocation)*100).round(2)
+})
+
+# Duplicate checks
+check_primary_key(geolocation, ["geolocation_zip_code_prefix", "geolocation_lat"]) #failed second normalisation so further spliting is needed
+check_primary_key(geolocation, ["geolocation_lat"])
+
+
+
+
+print(product_category_name_translation.head())
+print("\n product_category_name_translation Shape: ", product_category_name_translation.shape)
+product_category_name_translation.info()
+
+# Missing values
+missing = pd.DataFrame({
+    "Missing": product_category_name_translation.isnull().sum(),
+    "Percentage": (product_category_name_translation.isnull().sum()/len(product_category_name_translation)*100).round(2)
+})
+
+# Duplicate checks
+check_primary_key(product_category_name_translation, ["product_category_name"])
+
+
+
+print(products.head())
+print("\n products Shape: ", products.shape)
+products.info()
+
+# Missing values
+missing = pd.DataFrame({
+    "Missing": products.isnull().sum(),
+    "Percentage": (products.isnull().sum()/len(products)*100).round(2)
+})
+
+# Duplicate checks
+check_primary_key(products, ["product_category_name"])
+
+
+
+print(sellers.head())
+print("\n sellers Shape: ", sellers.shape)
+sellers.info()
+
+# Missing values
+missing = pd.DataFrame({
+    "Missing": sellers.isnull().sum(),
+    "Percentage": (sellers.isnull().sum()/len(sellers)*100).round(2)
+})
+
+# Duplicate checks
+check_primary_key(sellers, ["seller_id"])
+
+
+
+
 
 # orders.to_sql("orders", engine, if_exists="replace", index=False)
