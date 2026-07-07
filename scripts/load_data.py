@@ -164,7 +164,7 @@ missing = pd.DataFrame({
 })
 
 # Duplicate checks
-check_primary_key(products, ["product_category_name"])
+check_primary_key(products, ["product_id"])
 
 
 
