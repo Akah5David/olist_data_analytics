@@ -3,6 +3,10 @@ import os
 from dotenv import load_dotenv
 from sqlalchemy import create_engine, text
 
+import os
+
+print(os.getcwd())
+
 #reads your .env file and makes its values available through os.getenv().it does not return the environment variables. It simply #loads them into the process's environment and returns a boolean (True or False).
 load_dotenv() 
 
